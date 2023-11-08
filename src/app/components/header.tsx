@@ -5,9 +5,10 @@ export default function Header() {
 
   return <header className="grid p-3 md:p-4 gap-3 w-full max-w-5xl">
 
-    <div className="row-start-1 col-start-1 align-self-center">
-      <h1>Synapse</h1>
-    </div>
+      <img
+        src='synapse-logo.svg'
+        className="row-start-1 col-start-1 align-self-center" 
+      />
 
     <div className="
       bg-gray-900 lg:bg-inherit

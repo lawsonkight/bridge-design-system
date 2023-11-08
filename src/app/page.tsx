@@ -14,6 +14,6 @@ export default function Home() {
       <Bridge />
       <Wallet />
     </main>
-    {/* <Footer /> */}
+    <Footer />
   </>
 }
