@@ -5,15 +5,12 @@ import Bridge from './components/bridge'
 import Footer from './components/footer'
 
 export default function Home() {
-  return (
-    <>
+  return <>
     <Header />
     <main className="m-2 grid grid-cols-2 gap-4">
       <Wallet />
       <Bridge />
     </main>
-    <Footer />
-    
-    </>
-  )
+    {/* <Footer /> */}
+  </>
 }

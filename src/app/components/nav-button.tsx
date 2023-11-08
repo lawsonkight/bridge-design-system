@@ -6,11 +6,19 @@ type Props = {
 
 export default function NavButton({ label, url, selected }: Props) {
 
-  let styles = 'px-2 py-1 text-sm text-gray-200 hover:bg-gray-900'
-  if (selected) styles += ' border'
+  let styles = 'py-2 px-4 text-sm text-gray-200 text-center grow rounded'
+  styles += selected 
+    ? ' border border-fuchsia-500'
+    : ' hover:bg-gray-800 lg:hover:bg-gray-900 hover:rounded-md'
 
-  return <a href={url} className={styles}>
-    {label}
-  </a>
+  return selected
+    ?
+    <div className={styles}>
+      {label}
+    </div>
+    :
+    <a href={url} className={styles}>
+      {label}
+    </a>
   
 }

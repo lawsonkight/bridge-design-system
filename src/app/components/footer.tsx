@@ -1,4 +1,4 @@
-export default function Square() {
+export default function Footer() {
   return <header>
     <h1>Synapse</h1>
     <ul>
