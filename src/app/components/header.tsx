@@ -1,5 +1,5 @@
 import NavButton from './nav-button'
-import CTAButton from './button-cta'
+import Button from './button-sm'
 
 export default function Header() {
 
@@ -25,7 +25,7 @@ export default function Header() {
     </div>
 
     <div className="row-start-1 col-start-1 align-self-center justify-self-end">
-      <CTAButton label='Connect Wallet' />
+      <Button label='Connect Wallet' cta />
     </div>
     
   </header>

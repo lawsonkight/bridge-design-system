@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Header from './components/header'
-import Wallet from './components/wallet'
+import Wallet from './components/wallet-view'
 import Bridge from './components/bridge'
 import Footer from './components/footer'
 
