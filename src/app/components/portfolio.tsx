@@ -5,7 +5,7 @@ type Props = {
   selected?: boolean
 }
 
-export default function PortfolioHeader({ label, selected }: Props) {
+export default function Portfolio({ label, selected }: Props) {
 
   if (!label) {
     label = 'Welcome to Synapse'
@@ -23,7 +23,7 @@ export default function PortfolioHeader({ label, selected }: Props) {
       <p className="my-3">Synapse is the most widely used, extensible, and secure cross-chain communications network.</p>
       <p className="my-3">Get route quotes in the Bridge panel, and connect your wallet when you are ready to submit a transaction.</p>
 
-     <Button label='Connect Wallet' cta />
+      <Button label='Connect Wallet' cta />
 
     </div>
 

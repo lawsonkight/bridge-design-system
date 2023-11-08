@@ -6,12 +6,18 @@ type Props = {
 function FooterSection({ header, links }: Props) {
 
   const listItems = links.map(link => 
-    <a key={link.label} href={link.url} className="text-gray-400 hover:text-gray-300">{link.label}</a>
+
+    <a key={link.label} href={link.url} className="text-gray-400 hover:text-gray-300">
+      {link.label}
+    </a>
+    
   )
 
   return <section className="flex flex-col gap-2">
+
     <header className="text-gray-300 my-1">{header}</header>
     {listItems}
+    
   </section>
 
 }
