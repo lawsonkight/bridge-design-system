@@ -5,7 +5,9 @@ export default function Bridge() {
 
   return <div>
 
-      <Tab label="Bridge" selected />
+      <header className="p-1">
+        <Tab label="Bridge" selected />
+      </header>
 
       <div className="bg-gray-900 p-3 flex flex-col gap-3 rounded-lg">
 
