@@ -1,11 +1,12 @@
 import Tab from './tab'
 import Button from './button-sm'
 import ChainSelect from './select-chain'
+import TokenSelect from './select-token'
 import Input from './input'
 
 export default function Bridge() {
 
-  return <div>
+  return <div className="basis-1 grow flex flex-col gap-4">
 
       <header className="p-1">
         <Tab label="Bridge" selected />
@@ -20,12 +21,9 @@ export default function Bridge() {
             <Button label="Connect Wallet" />
           </section>
 
-          <section className="border border-gray-600 p-2 rounded-lg">
-            <select className='bg-gray-700 p-3 rounded hover:outline hover:outline-gray-500 hover:rounded-md'>
-              <option>
-                In
-              </option>
-            </select>
+          <section className="border border-gray-600 p-2 rounded-lg flex">
+            <TokenSelect label="Out" />
+            <Button label="Approve" />
           </section>
 
         </div>
@@ -34,18 +32,16 @@ export default function Bridge() {
 
           <section className="grid grid-cols-[1fr_auto] items-center">
             <ChainSelect label="To" />
-            <Input placeholder="To address" />
+            <Input placeholder="&lsquo;To&rsquo; address" />
           </section>
 
           <section className="border border-gray-600 p-2 rounded-lg">
-            <select className='bg-gray-700 p-3 rounded hover:outline hover:outline-gray-500 hover:rounded-md'>
-              <option>Out</option>
-            </select>
+            <TokenSelect label="In" />
           </section>
 
         </div>
 
-       <Button label="Bridge" cta />
+       <Button label="Bridge" size="md" cta />
 
       </div>
 

@@ -5,7 +5,7 @@ type Props = {
 
 export default function Tab({ label, selected }: Props) {
 
-  let styles = 'px-2 py-3 inline-block'
+  let styles = `p-2 inline-block text-lg font-medium`
   if (selected) styles += ' border-b border-fuchsia-500'
 
   return <div className={styles}>

@@ -3,7 +3,7 @@ import Button from './button-sm'
 
 export default function Header() {
 
-  return <header className="grid p-3 md:p-4 gap-3">
+  return <header className="grid p-3 md:p-4 gap-3 w-full max-w-5xl">
 
     <div className="row-start-1 col-start-1 align-self-center">
       <h1>Synapse</h1>
