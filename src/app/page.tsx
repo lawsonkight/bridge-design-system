@@ -6,14 +6,19 @@ import Footer from './components/footer'
 
 export default function Home() {
   return <>
+
     <Header />
+
     <main className="
       m-2 gap-8 max-w-md flex flex-col
       md:flex md:flex-row-reverse md:max-w-5xl
     ">
+
       <Bridge />
       <Wallet />
+
     </main>
+    
     <Footer />
   </>
 }

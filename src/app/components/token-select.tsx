@@ -6,9 +6,7 @@ type Props = {
 
 export default function ChainSelect({ label, token, cta }: Props) {
 
-  console.log(label, token, cta)
-
-  let styles = `flex w-min px-3 py-2 ${token ? 'text-lg' : 'text-xl'} bg-gray-700 rounded hover:rounded-md gap-3 items-center
+  let styles = `flex w-min px-3 py-2 ${token ? 'text-lg' : 'text-xl'} bg-gray-700 rounded hover:rounded-md gap-3 items-center cursor-pointer
     border ${cta
     ? 'border-fuchsia-500'
     : 'border-transparent hover:border hover:border-gray-400'

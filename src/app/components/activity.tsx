@@ -5,28 +5,23 @@ type Props = {
   selected?: boolean
 }
 
-export default function PortfolioHeader({ label, selected }: Props) {
+export default function Activity({ label, selected }: Props) {
 
   if (!label) {
     label = 'Activity'
     selected = true
   }
 
-  return <section className="border border-gray-800 rounded">
+  return <>
 
-    <header className="p-3 bg-gray-900">
-      {label}
-    </header>
+    <section className="border border-gray-800 rounded p-3">
+      Pending
+    </section>
 
-    <div className="m-3">
-
-      <p className="my-3">Synapse is the most widely used, extensible, and secure cross-chain communications network.</p>
-      <p className="my-3">Get route quotes in the Bridge panel, and connect your wallet when you are ready to submit a transaction.</p>
-
-     <Button label='Connect Wallet' cta />
-
-    </div>
-
-  </section>
+    <section className="border border-gray-800 rounded p-3">
+      Complete
+    </section>
+    
+  </>
     
 }
