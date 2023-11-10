@@ -14,11 +14,20 @@ export default function Activity({ label, selected }: Props) {
 
   return <>
 
-    <section className="border border-gray-800 rounded p-3">
-      Pending
+    <section className="flex">
+      <div>
+        <div>3 USDC</div>
+        <div>Polygon</div>
+      </div>
+      <div className="w-full whitespace-nowrap">
+        <div>BNB Chain</div>
+      </div>
+      <div>
+        <div>Waiting…</div>
+      </div>
     </section>
 
-    <section className="border border-gray-800 rounded p-3">
+    <section className="border border-gray-800 rounded p-3 overflow-visible whitespace-nowrap">
       Complete
     </section>
     

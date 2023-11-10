@@ -6,7 +6,7 @@ type Props = {
 
 export default function Button({ label, cta, size='sm' }: Props) {
 
-  let styles = `px-4 inline-block border rounded hover:rounded-md text-center w-fit cursor-pointer text-${size} ${size === 'sm' ? 'py-2' : 'py-3'} 
+  let styles = `px-4 inline-block border rounded hover:rounded-md text-center w-fit cursor-pointer center text-${size} ${size === 'sm' ? 'py-2' : 'py-3'} 
   border 
     ${cta 
       ? 'border-fuchsia-500 hover:bg-fuchsia-950' 
